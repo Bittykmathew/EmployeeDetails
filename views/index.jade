@@ -1,11 +1,14 @@
-//- extends index.pug 
-//- block content 
+
 doctype html 
 html(language='en')
 
     head 
         link(rel='stylesheet', type="text/css", href='/css/mystyle.css')
+        script(src='/js/navigation.js')
+
         title Hello World 3
-        include ./index.pug
     body
-        h1 About Page 
+        include ./shared/navigation.jade
+        .main(id="main")
+            h1 Register 
+        

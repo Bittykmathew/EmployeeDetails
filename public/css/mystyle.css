@@ -1,20 +1,30 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+* {box-sizing: border-box;}
+.header {
+  cursor:pointer;
+  width: 200px;
+  text-align: center;
+}
+
   .topnav {
-    overflow: hidden;
-    background-color: #333;
+    height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
   }
   
   .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
   }
   
   .topnav a:hover {
@@ -25,4 +35,38 @@ body {
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
+  }
+
+  .container {
+    border-radius: 10px;
+    background-color: #a4a7ad;
+    padding: 10px;
+  }
+
+  /*#table-form {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table-form td, #table-form th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #table-form tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #table-form tr:hover {background-color: #ddd;}
+  
+  #table-form th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }*/
+
+  @media screen and (max-height: 450px) {
+    .topnav {padding-top: 15px;}
+    .topnav a {font-size: 18px;}
   }

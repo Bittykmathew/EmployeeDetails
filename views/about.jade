@@ -1,14 +1,11 @@
-
 doctype html 
 html(language='en')
 
     head 
         link(rel='stylesheet', type="text/css", href='/css/mystyle.css')
+        script(src='/js/navigation.js')
         title Hello World 3
     body
-        .topnav 
-            a.active(href='/') Home
-            a(href='/') Contact 
-            a(href='/about') About 
-        
-        
+        include ./shared/navigation.jade
+        .main(id="main")
+            h1 This is About Page 

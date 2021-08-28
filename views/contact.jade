@@ -1,0 +1,25 @@
+doctype html 
+html(language='en')
+
+    head 
+        link(rel='stylesheet', type="text/css", href='/css/contact.css')
+        link(rel='stylesheet', type="text/css", href='/css/mystyle.css')
+        script(src='/js/navigation.js')
+        title Hello World 3
+    body
+        include ./shared/navigation.jade
+
+        .main(id="main")
+            h1 Contact Us
+
+            .container
+                label(for='fname') First Name 
+                input(type='text', id='fname', placeholder='First Name')
+
+                label(for='lname') Last Name 
+                input(type='text', id='lname', placeholder='Last Name')
+
+                label(for='subject') Subject 
+                textarea(id='subject', placeholder='Write Something...', style="height:200px")
+
+                input(type='submit', value ='Submit')
